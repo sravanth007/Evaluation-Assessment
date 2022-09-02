@@ -25,10 +25,7 @@ class InstallData implements InstallDataInterface
      */
     protected $attributeSetFactory;
 
-    /**
-     * @param CustomerSetupFactory $customerSetupFactory
-     * @param AttributeSetFactory $attributeSetFactory
-     */
+    
     public function __construct(
         CustomerSetupFactory $customerSetupFactory,
         AttributeSetFactory $attributeSetFactory
@@ -38,9 +35,7 @@ class InstallData implements InstallDataInterface
     }
 
 
-    /**
-     * {@inheritdoc}
-     */
+    
     public function install(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
     {
         /** @var CustomerSetup $customerSetup */
